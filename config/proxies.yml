@@ -1,0 +1,18 @@
+# External API declaration. Admins see exactly which endpoints the app reaches.
+#
+# The card reader sends each uploaded photo to Claude (Anthropic Messages API) and gets
+# back one record per card. The API key is never in the frontend: it lives in this
+# app's KV store under `anthropicApiKey` and is injected here at request time.
+api.anthropic.com:
+  timeout: 120000
+  paths:
+    allowlist:
+      - /v1/messages
+  headers:
+    inject:
+      x-api-key: kv.anthropicApiKey
+      anthropic-version: "'2023-06-01'"
+      anthropic-beta: "'server-side-fallback-2026-07-01'"
+    allowlist:
+      - content-type
+      - accept

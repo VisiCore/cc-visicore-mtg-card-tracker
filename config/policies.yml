@@ -1,0 +1,6 @@
+# Product API access declaration.
+#
+# This app only uses its own KV store (/a/{appId}/kvstore/*) and its own external proxy
+# (/a/{appId}/proxy/*). Both are granted automatically through the AppUser role when an
+# admin shares the app, so no product API paths need to be declared.
+policies: []
