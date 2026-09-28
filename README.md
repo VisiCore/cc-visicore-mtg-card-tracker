@@ -2,6 +2,8 @@
 
 Photograph your Magic: The Gathering cards, let Claude read them, and keep the whole collection in a shared, searchable vault inside Cribl.
 
+![Photo goes in, cards come out: scanning a spread, reviewing the reads, and browsing the vault](docs/demo.gif)
+
 ## Summary
 
 MTG Card Vault is a Cribl app for cataloging physical trading cards. It helps users turn a phone photo into structured card records, browse their collection as a glowing card wall, and keep notes and counts for every card.
